@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+:root{
+    --colorNaranja: #F85555
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #515151;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+}
+.active-link{
+  opacity:1;
+}
+.active-link>:nth-child(1){
+    color: var(--colorNaranja)
+}
+a{
+text-decoration:none ;
+}
+ul{
+    list-style: none;
+}
+
+.header__logo{
+    display: inline-block;
+}

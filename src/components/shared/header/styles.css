@@ -1,0 +1,36 @@
+:root {
+    --color-Gray: #c9c9c9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    border-bottom: 1px solid var(--color-Gray);
+    height: 50px;
+    align-items: center;
+
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.header__item>a>i {
+    color: var(--color-Gray);
+    font-size: 20px;
+}
+
+.header__logo {
+    font-size: 25px;
+    color: #f85555;
+}
+
+.header__list>p {
+    height: 50px;
+    width: 1px;
+    background-color: var(--color-Gray);
+}

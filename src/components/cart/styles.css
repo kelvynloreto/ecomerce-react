@@ -1,0 +1,118 @@
+.cart {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.cart_content-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart__item {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 236, 236);
+    gap: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: 1px solid rgba(153, 153, 153, 0.311);
+    transition: transform 0.5s, filter0.2s;
+}
+
+.cart__item:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 5px rgba(31, 31, 31, 0.631));
+    transition: transform 0.5s, filter0.2s;
+}
+
+.cart__item-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart_content-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart__item-img {
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.cart__item-img>img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.cart__quantity {
+    margin-left: 15px;
+}
+
+.cart__icon-trash {
+    cursor: pointer;
+    font-size: 25px;
+    transition: color 0.2s;
+}
+
+.cart__icon-trash:hover {
+    color: var(--colorNaranja);
+}
+
+.cart__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    min-height: 50px;
+    margin-bottom: 3em;
+    gap: 1em;
+}
+
+.cart__footer>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cart__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 1em;
+    background-color: #f85555;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s, filter 0.3s;
+}
+
+.cart__btn:hover {
+    filter: drop-shadow(0 0 5px rgb(119, 119, 119));
+}
+
+.cart__btn:active {
+    transform: scale(0.99);
+}
+
+.purchase_made {
+    margin-left: 15px;
+}

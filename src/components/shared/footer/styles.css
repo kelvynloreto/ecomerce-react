@@ -1,0 +1,30 @@
+.footer{
+margin-top: 2em;
+min-width: 100vw;
+height: 100px;
+background-color: #5c5c5c;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+flex-direction: column;
+gap: 10px;
+}
+.footer>a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer>h2{
+    color: white;
+    font-size: 15px;
+}
+.footer>a>i{
+    font-size: 20px;
+    color: white;
+}
