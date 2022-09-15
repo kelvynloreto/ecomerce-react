@@ -1,0 +1,38 @@
+@import "inputFilter";
+@import 'cardHome';
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+
+    .home__container-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+}
+
+
+
+@media (max-width:500px) {
+    .card-home {
+        width: 100%;
+    }
+}
+
+@media (min-width:750px) {
+    .card-home {
+        width: 350px;
+    }
+}
+
+@media (max-width:970px) {
+    .home .home__container-card {
+       justify-content: center
+    }
+ }

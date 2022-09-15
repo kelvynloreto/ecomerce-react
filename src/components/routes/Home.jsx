@@ -52,8 +52,8 @@ useEffect(() => {
     <div className="home">
       <InputSearch setInputSearch={setInputSearch} />
     <section className="container_filter">
-    <CategoryFilter/>
     <PriceFilter setObjFilterPrice={setObjFilterPrice}/>
+    <CategoryFilter/>
     </section>
       <div className="home__container-card">
         {

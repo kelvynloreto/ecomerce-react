@@ -21,3 +21,10 @@ return axios.get(URL)
 .catch(err=> console.log(err))
 }
 
+
+export const getProductByCategory=(id) =>(dispatch)=>{
+    const URL =`https://ecommerce-api-react.herokuapp.com/api/v1/products?category=${id}`
+return axios.get(URL)
+.then(res=> dispatch(setProducts(res.data.data.products)))
+.catch(err=> console.log(err))
+}

@@ -24,9 +24,9 @@ const handleAllProduct= ()=>{
 
 
   return (
-    <div>
+    <div className='category-filter'>
         <h3>Category</h3>
-        <ul>
+        <ul className='category-list'>
             <li onClick={handleAllProduct}>All Product</li>
 {
     categories?.map(category => 

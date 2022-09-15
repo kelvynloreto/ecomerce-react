@@ -2,7 +2,7 @@ import React from "react";
 import ProductPurchases from "./ProductPurchases";
 
 const PurchasesCart = ({ purchase }) => {
-  console.log(purchase);
+
   return (
     <article className="purchase__card">
       <h3 className="purchase__card-date">{purchase.createdAt}</h3>
