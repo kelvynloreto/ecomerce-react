@@ -42,10 +42,11 @@ useEffect(() => {
         true
       }
     })
-    if (objFilterPrice.to !==  0 && objFilterPrice.from!== 0 ) {
+    if (objFilterPrice.to !==  0 || objFilterPrice.from!== 0 ) {
       setFilterProducts(filter)
     }
-    setFilterProducts()
+      setFilterProducts()
+    
 }, [objFilterPrice.to, objFilterPrice.from])
 
   return (
@@ -57,7 +58,7 @@ useEffect(() => {
     </section>
       <div className="home__container-card">
         {
-filterProducts? filterProducts.map((product) => (
+filterProducts ? filterProducts.map((product) => (
   <CardHome key={product.id} product={product} />
 ))
 : 

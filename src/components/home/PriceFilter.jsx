@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const PriceFilter = ({setObjFilterPrice}) => {
   
@@ -8,7 +8,8 @@ const PriceFilter = ({setObjFilterPrice}) => {
             from:+e.target.fromPrice.value,
             to:+e.target.toPrice.value
         }
-        setObjFilterPrice(obj)        
+        setObjFilterPrice(obj)  
+       
     }
 
   return (
